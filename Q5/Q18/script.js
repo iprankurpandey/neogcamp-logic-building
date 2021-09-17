@@ -5,7 +5,6 @@ const blueColor = document.querySelector('#blue')
 const resetB = document.querySelector('#reset')
 const outputBox = document.querySelector('#output')
 
-
 function red() {
 
     outputBox.innerText = input.value;
