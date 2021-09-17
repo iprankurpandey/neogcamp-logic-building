@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+:root{
+    --primary-color : tomato;
+    --secondary-color: rgb(188, 73, 192);
+    font-family: 'Dangrek', cursive;
+}
+
+#button1 , h1{
+    color: var(--primary-color);
+    
+}
+
+#button2,h2{
+    color: var(--secondary-color);
+}
+
