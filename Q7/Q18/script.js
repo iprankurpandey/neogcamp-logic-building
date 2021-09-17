@@ -15,6 +15,7 @@ function loading(){
 // function loading(){
 //     if(image.style.display === 'none')  {
 //      image.style.display ='block'
+//      document.body.style.backgroundColor = "red";
 //     }
 //     else{
 //      image.style.display ='none'
