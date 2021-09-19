@@ -1,14 +1,16 @@
 const input = document.querySelector('#input')
-console.log(input.value)
+
 const button = document.querySelector('#button')
+
 const output = document.querySelector('#output')
-const url = 'https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=' + input.value;
+
+const url = 'https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=' 
 
 function geturl() {
-    fetch(url)
-        .then(response => response.text())
-        .then(data =>
-            console.log(data));
+  fetch(url + input.value)
+    .then((response) => response.text())
+    .then((data) =>
+    output.innerHTML = data);
 }
 
 button.addEventListener('click', geturl)
