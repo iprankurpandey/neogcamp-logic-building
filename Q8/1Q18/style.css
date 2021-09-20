@@ -1,0 +1,15 @@
+#container{
+    text-align: center;
+}
+#button{
+    border: 1rem;
+    padding: 0.5rem;
+    margin: 2rem;
+    border-radius: 1.5cm;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color:white;
+    background-color: aquamarine;
+}
+
