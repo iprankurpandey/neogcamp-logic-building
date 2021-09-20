@@ -4,13 +4,21 @@ const button = document.querySelector('#button')
 
 const output = document.querySelector('#output')
 
-const url = 'https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=' 
+const url = 'https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text='
 
 function geturl() {
-  fetch(url + input.value)
-    .then((response) => response.text())
-    .then((data) =>
-    output.innerHTML = data);
+
+  try {
+    fetch(url + input.value)
+      .then((response) => response.text())
+      .then((data) =>
+        output.innerHTML = 'this is response : ' + data);
+  } catch (error) {
+    ((error) => {
+      console.error('Error:', error);
+    });
+  }
+
 }
 
 button.addEventListener('click', geturl)
