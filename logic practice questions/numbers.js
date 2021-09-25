@@ -30,3 +30,13 @@ const Farenhite = input.question('enter Farenhite : ')
 
 const Celcius = Number(Farenhite - 32) * 5/9 
 console.log(`the Celcius is : ${Celcius.toFixed(2)}°C`)
+
+// Calculate the area, perimeter of a square of side 'a'. Also, calculate the surface area and the volume of a cube of side 'a'.
+const input = require('readline-sync')
+const side = input.question('enter side : ')
+const area = Number(side)*Number(side)
+const perimeter = Number(side)*4
+console.log(`the area of square is : ${area} and perimeter is : ${perimeter}`)
+const surfaceArea = Number(side)*Number(side)*6
+const volume = Number(side)*Number(side)*Number(side)
+console.log(`the surface area of cube is : ${surfaceArea} and volume is : ${volume}`)
