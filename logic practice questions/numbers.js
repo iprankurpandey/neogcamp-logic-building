@@ -22,3 +22,11 @@ const mass = input.question('enter mass : ')
 const velocity = input.question('enter velocity : ')
 const KE = (0.5)*Number(mass)*Number(velocity)*Number(velocity)
 console.log(`the KE is : ${KE} J`)
+
+// Write a program to convert Fahrenheit to Celsius. For Fahrenheit to Celsius conversion use: C = (F - 32) * 5/9 'F' and 'C' are the temperatures on the Fahrenheit scale and Celsius scale respectively.
+
+const input = require('readline-sync')
+const Farenhite = input.question('enter Farenhite : ')
+
+const Celcius = Number(Farenhite - 32) * 5/9 
+console.log(`the Celcius is : ${Celcius.toFixed(2)}°C`)
