@@ -15,3 +15,10 @@ const time = input.question('enter time : ')
 const rate = input.question('enter rate : ')
 const SI = Number(principal)*Number(time)*Number(rate)/100
 console.log(`the SI is : ${SI}`)
+
+// Write a program to calculate the kinetic energy of a body with mass 'm' and volume 'v'.
+const input = require('readline-sync')
+const mass = input.question('enter mass : ')
+const velocity = input.question('enter velocity : ')
+const KE = (0.5)*Number(mass)*Number(velocity)*Number(velocity)
+console.log(`the KE is : ${KE} J`)
