@@ -83,3 +83,12 @@ for(i=0;i<result.length;i++){
 	sum+=result[i]
 	console.log(sum)
 }
+
+// Write a JavaScript program that reverses a number.
+const num = 12354
+const reverse = (num) => parseInt(String(num)
+.split("")
+.reverse()
+.join(""), 10);
+console.log(reverse(num));
+ 
