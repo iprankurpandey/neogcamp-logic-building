@@ -58,3 +58,16 @@ const input = require('readline-sync')
 const num = Number (input.question('enter number : '))
 const sum = num*(num+1)/2
 console.log(`the sum of ${num} natural numbers are : ${sum}`)
+
+// Write a Program to Print N Odd Number in Descending Order.
+
+const input = require('readline-sync')
+const num = Number (input.question('enter number : '))
+const odd = 2*num -1 
+for(i=1;i<=odd;i++){
+	if(i%2!=0){
+		// console.log(i)
+console.log(`the ${num} Odd natural numbers in Descending order are:  ${i}`)
+	}
+
+}
