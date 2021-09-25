@@ -40,3 +40,15 @@ console.log(`the area of square is : ${area} and perimeter is : ${perimeter}`)
 const surfaceArea = Number(side)*Number(side)*6
 const volume = Number(side)*Number(side)*Number(side)
 console.log(`the surface area of cube is : ${surfaceArea} and volume is : ${volume}`)
+
+// Given the Cost Price(CP) and Selling Price(SP) of a product. Write a Program to Calculate the Profit or Loss.
+
+const input = require('readline-sync')
+const cp = Number (input.question('enter cost price : '))
+const sp = Number (input.question('enter selling price : '))
+if (cp>sp){
+	console.log(`this is a loss of ${cp -sp}₹`)
+}
+else {
+	console.log(`this is a profit of ${sp -cp}₹`)
+}
