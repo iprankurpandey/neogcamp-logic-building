@@ -106,3 +106,7 @@ function rotate(array, stepsToShift) {
 
 rotate(array, stepsToShift) 
  
+// Write a Program to convert Decimal to Binary.
+const num = 12
+const decToBinary = num.toString(2);
+console.log(decToBinary)
