@@ -91,4 +91,18 @@ const reverse = (num) => parseInt(String(num)
 .reverse()
 .join(""), 10);
 console.log(reverse(num));
+
+
+// Write a Program to cyclically Rotate a Number by X positions in the left direction, as provided by the user.
+const stepsToShift = 2;
+const array = [1,2,3,4]
+function rotate(array, stepsToShift) {
+
+    for (var i = 0; i < stepsToShift; i++) {
+        array.unshift(array.pop());
+    }
+    return array;
+}
+
+rotate(array, stepsToShift) 
  
