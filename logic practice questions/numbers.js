@@ -52,3 +52,9 @@ if (cp>sp){
 else {
 	console.log(`this is a profit of ${sp -cp}₹`)
 }
+// Write a program to calculate sum of N natural digits, as input by the users?
+
+const input = require('readline-sync')
+const num = Number (input.question('enter number : '))
+const sum = num*(num+1)/2
+console.log(`the sum of ${num} natural numbers are : ${sum}`)
