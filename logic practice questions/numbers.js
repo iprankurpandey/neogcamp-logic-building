@@ -71,3 +71,15 @@ console.log(`the ${num} Odd natural numbers in Descending order are:  ${i}`)
 	}
 
 }
+
+
+// Write a JavaScript program to compute the sum of all digits that occur in a given string.
+
+const input = require('readline-sync')
+const num = input.question('enter number : ')
+const result = Array.from(String(num), Number);
+let sum = 0
+for(i=0;i<result.length;i++){
+	sum+=result[i]
+	console.log(sum)
+}
