@@ -34,3 +34,49 @@ console.log(max)
 //  }
 //  console.log(min)
 // }
+
+// Find Median and Mode of an array.
+// Median : (N+1/2)th term.
+// Mode : Most repeating term
+let array1 = [10,4,7,2,5,11,5,4,0]
+let array = array1.concat(78)
+let median,sum=0;
+let arraySort=array.sort(function(a, b){return a - b})
+let nthTerm=arraySort.length
+
+if(nthTerm%2==0){
+ median = (nthTerm/2)
+
+ median= array[median]
+}
+else if (nthTerm%2 != 0){
+	median = ((nthTerm+1)/2)
+
+	median= array[median]
+}
+
+else{
+	console.log('numbers are zero')
+}
+
+let  mean = 0;
+for(i=0;i<array.length;i++){
+	sum +=array[i]
+	mean =(sum/array.length)
+	
+}
+
+
+const set = new Set(array);
+const mode = array.filter(item => {
+    if (set.has(item)) {
+        set.delete(item);
+    } else {
+        return item;
+    }
+});
+
+console.log(`the mean is :  ${mean}`)
+console.log(`the median is :  ${median}`)
+console.log(`the mode is :  ${mode}`)
+
