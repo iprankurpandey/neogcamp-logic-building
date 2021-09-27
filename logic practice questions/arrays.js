@@ -96,3 +96,16 @@ let count = 0;
 constants =Number(newName.length - count )
 console.log(`vowels count is : ${count}`)
 console.log(`constants count is : ${constants}`)
+
+// Shift an array by X to right.
+// Example [1,2,3,4,5] after shifting to right [5,1,2,3,4]
+const array = [1,2,3,4,5];
+function rotate(array, stepsToShift) {
+
+    for (var i = 0; i < stepsToShift; i++) {
+        array.unshift(array.pop());
+    }
+
+    return array;
+}
+console.log(rotate(array,1))
