@@ -80,3 +80,19 @@ console.log(`the mean is :  ${mean}`)
 console.log(`the median is :  ${median}`)
 console.log(`the mode is :  ${mode}`)
 
+// Find number of constants and vowels in a string.
+let nameValue = "The quick brown fox jumps over the lazy dog"
+let newName = nameValue.replaceAll(' ', '')
+let vowels = ['a','e','i','o','u']
+let count = 0;
+
+    // loop through string to test if each character is a vowel
+    for (let letter of newName.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+constants =Number(newName.length - count )
+console.log(`vowels count is : ${count}`)
+console.log(`constants count is : ${constants}`)
