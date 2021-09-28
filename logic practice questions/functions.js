@@ -65,3 +65,21 @@ function max(...args) {
 }
 
 max(1,2,3,4444,5,78,101525)
+
+// Given three angles of a triange, your function should return if it is a scalen, isosceles, equilateral triangle or not a triangle at all. Example:
+// Input: typeOfTriangle(30, 60, 90) ––> Output: Scalen Triangle
+
+function triangleCheck(x,y,z){
+    if (x == y && y == z)
+          console.log("Equilateral Triangle");
+    
+       // Check for isosceles triangle
+       else if (x == y || y == z || z == x)
+          console.log("Isosceles Triangle");
+    
+       // Otherwise scalene triangle
+       else
+           console.log("Scalene Triangle");
+   }
+   
+   triangleCheck(45,45,90)
