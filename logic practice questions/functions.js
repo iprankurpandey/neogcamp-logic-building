@@ -28,3 +28,21 @@ function wordCount(my_string){
 	return wordCount
 }
 wordCount('We are neoGrammers')
+
+// Given n numbers, your function should return the minimum of them all. The number of parameters won't be accepted from user.
+// Example:
+// Input: findMin(3,5) ––> Output: 3
+// Input: findMin(3,5,9,1) ––> Output: 1
+// (Hint: Lookup rest parameters in JavaScript)
+
+function min(...args) {
+    var minValue = args[0];
+    for (var i = 1; i < args.length; i++) {
+        if (minValue > args[i]) {
+            minValue = args[i];
+        }
+    }
+    return minValue;
+}
+
+min(1,2,3,4444,5,78,-1)
