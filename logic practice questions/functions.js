@@ -19,3 +19,12 @@ power(5,3)
 
  }
 areaOfHexagonre(10)
+
+// Given a sentence, your functions should return the number of words in the sentence.
+// Example:// Input: noOfWords(We are neoGrammers) ––> Output: 3
+let my_string =''
+function wordCount(my_string){
+	let wordCount = (my_string.split(" ").length);
+	return wordCount
+}
+wordCount('We are neoGrammers')
