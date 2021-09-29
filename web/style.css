@@ -1,0 +1,22 @@
+:root{
+    --first-color: red;
+    --second-color: cyan;
+}
+/* css background properties */
+body{
+    /* background color applies on DOM */
+    background-color: lightblue;
+    /* opacity decides the transparency of text over background color */
+    opacity: 1 ;
+    /* background images ,displays the images in DOM */
+    background-image: url(./example.png);
+    /* repeat , it will repeat the image in background for horizontal and vertical axis  */
+    background-repeat: repeat;
+    /* background postion ,it will set the position of background image ,whether the image will be at the either top,bottom ,left or right or top/down */
+    background-position: right bottom;
+    /*  */
+} 
+
+#text{
+   
+}
