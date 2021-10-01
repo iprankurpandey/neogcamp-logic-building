@@ -11,12 +11,32 @@ body{
     /* background images ,displays the images in DOM */
     background-image: url(./example.png);
     /* repeat , it will repeat the image in background for horizontal and vertical axis  */
-    background-repeat: repeat;
+    background-repeat:no-repeat;
     /* background postion ,it will set the position of background image ,whether the image will be at the either top,bottom ,left or right or top/down */
     background-position: right bottom;
-    /*  https://www.vaastuinternational.com/Lo-Shu-Grid-Hindi.html*/
+    /* background attachment deciced that posiztion of images with respect to the content ,by using this we can decide whether to scroll the image or fixed it ,when page is scrolled.*/ 
+    background-attachment: fixed;
 } 
 
 #text{
-   
+    /* border */
+   border:solid;
+   /* border color */
+   border-color: red;
+   /* bprder width */
+   border-width: 5px; 
+   /* margin -Margins are used to create space around elements, outside of any defined borders. */
+   margin: 25px 50px 75px 50px;
+   /* text alignment */
+   text-align: center;
+   /* padding -Padding is used to create space around an element's content, inside of any defined borders*/
+   padding: 5px;
+   /* height */
+   height:2cm;
+   /* width */
+   width:10cm;
+}
+
+#container{
+    margin: 0;
 }
