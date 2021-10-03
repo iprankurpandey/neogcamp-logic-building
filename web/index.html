@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>box model</title>
 </head>
+<style>
+    .container {
+        background-color: bisque;
+        border: 2px solid;
+        border-color: aqua;
+        margin: 2px;
+        padding: 2px
+    }
+</style>
+
 <body>
+    <h1>css box model</h1>
+    <div class="container">
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis cum modi, totam exercitationem
+            natus autem voluptas dignissimos libero soluta velit sequi quaerat. Iure sit odit corporis ullam, rem
+            consequuntur, dicta eius minus!
+        </p>
+    </div>
 
-  <div id="container">
-    <p id="text">"The quick brown fox jumps over the lazy dog"</p>
-  </div> 
-   
-
-</p>
+    <div class="container">
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia tempore sequi doloribus nobis
+            eaque dolorum quas voluptatibus tempora pariatur qui vel sapiente iste quo nulla autem consequuntur, dicta
+            eius minus!</p>
+    </div>
+    <div class="container">
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint eveniet fugit ea architecto
+            provident modi optio maxime blanditiis quod corrupti veritatis, repellat illo tempora ipsum iusto
+            perferendis inventore, quisquam dolore!</p>
+    </div>
 </body>
+
 </html>
