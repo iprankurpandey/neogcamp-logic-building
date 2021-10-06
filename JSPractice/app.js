@@ -21,10 +21,14 @@ car.color = 'red'
 car.owner = 'lala'
 console.log(car.color)
 console.log(car)
+console.table(car)
 
-https://www.simplilearn.com/tutorials/devops-tutorial/what-is-devops?source=sl_frs_eng_user_clicks_on_watch_tutorial
-let uName;
-console.log(uName)
-if (uName === undefined){
-    alert('please update name ')
-}
+// let uName;
+// console.log(uName)
+// if (uName === undefined){
+//     alert('please update name ')
+//     uName = 'text name'
+// }
+
+
+
