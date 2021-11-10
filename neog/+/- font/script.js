@@ -1,25 +1,24 @@
-const input = document.querySelector('#input1')
-const addition = document.querySelector('#add')
-const subtraction = document.querySelector('#subtract')
-const resetB = document.querySelector('#reset')
-const outputBox = document.querySelector('#output')
+const plus = document.querySelector('#button1')
+const minus  =  document.querySelector('#button2')
+const reset  =  document.querySelector('#reset')
+const text =  document.querySelector('#text')
 
-function sum() {
-    input.style.fontSize = "6rem";
-    document.body.style.backgroundColor= 'red'
+function plus1(){
 
+    text.style.fontSize = '4rem'
 }
 
-function subtract() {
-    input.style.fontSize = '3rem';
-    document.body.style.backgroundColor= 'green'
+function minus1(){
+
+    text.style.fontSize = '2rem'
+}
+function reset1(){
+
+    text.style.fontSize = ''
 }
 
-function reset() {
-    input.style.fontSize = ''
-    document.body.style.backgroundColor= ''
+plus.addEventListener('click',plus1)
 
-}
-addition.addEventListener('click', sum)
-subtraction.addEventListener('click', subtract)
-resetB.addEventListener('click', reset)
+minus.addEventListener('click',minus1)
+
+reset.addEventListener('click',reset1)
