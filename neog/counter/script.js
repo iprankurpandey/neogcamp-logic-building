@@ -1,26 +1,12 @@
-const counter = document.querySelector('#counter')
+const counter= document.querySelector('#button1')
 const text = document.querySelector('#text')
-const resetButton = document.querySelector('#reset')
-let count=0
+let count = 0;
 
-counterApp=()=>{
+function count1(){
 
 count++
-text.innerHTML= `the count is : ${count}`
 
-if(count%2==0){
-    document.body.style.backgroundColor= 'red'
-}
-else{
-    document.body.style.backgroundColor= 'green'   
-}
+text.innerHTML = `the counter is : ${count}`
 }
 
-reset=()=>{
-    count=0
-    document.body.style.backgroundColor= 'white' 
-    text.innerHTML= `the count is : ${count}`
-}
-
-counter.addEventListener('click',counterApp)
-resetButton.addEventListener('click',reset)
+counter.addEventListener('click',count1)
