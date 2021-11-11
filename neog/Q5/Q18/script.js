@@ -22,6 +22,8 @@ function blue() {
 }
 
 function reset() {
+    input.value =''
+    outputBox.innerText = '';
     outputBox.style.color=''
 }
 
