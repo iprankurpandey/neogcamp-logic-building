@@ -1,32 +1,26 @@
-const input = document.querySelector('#inputbox')
-const h1 = document.querySelector('#h1')
-const h2 = document.querySelector('#h2')
-const h3 = document.querySelector('#h3')
-const resetB = document.querySelector('#reset')
-const outputBox = document.querySelector('#output')
+const H1 = document.querySelector('#H1')
+const H2 = document.querySelector('#H2')
+const H3 = document.querySelector('#H3')
+const text = document.querySelector('#text')
+const inputtext = document.querySelector('#inputtext')
 
+function headingOne() {
+    inputtext.innerHTML = text.value
+    inputtext.style.fontSize = '2em'
 
-function headH1() {
-
-    outputBox.innerText = input.value;
-    outputBox.style.fontSize = '32px'
 }
 
-function headH2() {
-    outputBox.innerText = input.value;
-    outputBox.style.fontSize = '24px'
+function headingTwo() {
+    inputtext.innerHTML = text.value
+    inputtext.style.fontSize = '1.5em'
+
 }
 
-function headH3() {
-    outputBox.innerText = input.value;
-    outputBox.style.fontSize = '18.72px'
+function headingThree() {
+    inputtext.innerHTML = text.value
+    inputtext.style.fontSize = '1.17em'
 }
 
-function reset() {
-    outputBox.style.fontSize = ''
-}
-
-h1.addEventListener('click', headH1)
-h2.addEventListener('click', headH2)
-h3.addEventListener('click', headH3)
-resetB.addEventListener('click', reset)
+H1.addEventListener('click', headingOne)
+H2.addEventListener('click', headingTwo)
+H3.addEventListener('click', headingThree)
