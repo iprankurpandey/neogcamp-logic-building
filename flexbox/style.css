@@ -24,7 +24,8 @@ height: 122px;
 .item2{
     order: 4;
     /* flex-grow: 3; */
-    flex-shrink: 2;
+    /* flex-shrink: 1; */
+    align-self: center;
 }
 .item3{
     order: 1;
