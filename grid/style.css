@@ -1,0 +1,28 @@
+.container{
+
+background-color: red;
+border: 2px solid yellow;
+height: 700px;
+/* width: 900px; */
+display: grid;
+row-gap: 12px;
+column-gap: 12px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item{
+
+background-color: aqua;
+/* height: 122px ;
+width: 122px; */
+
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: black;
+}
+
+
