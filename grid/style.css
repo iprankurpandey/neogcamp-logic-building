@@ -2,20 +2,16 @@
 
 background-color: red;
 border: 2px solid yellow;
-height: 500px;
-/* width: 900px; */
-display: grid;
-row-gap: 12px;
-column-gap: 12px;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 43px 1fr 43px;
+height: 700px;
+width: 900px;
+
 }
 
 .item{
 
 background-color: aqua;
-/* height: 122px ;
-width: 122px; */
+height: 122px ;
+width: 122px;
 
 }
 
