@@ -67,4 +67,38 @@ tanay = 3
 // output - TypeError: Assignment to constant variable.
 // reason - In JS valuses assigned to const cannot be redeclared .therefore Error.
 
-// 
+// q8 - output
+const obj = { a: 1, b: 2 }
+obj.a = 22
+// output - 22
+// reasone -constants are used to make "variables which cannot be re-assigned new content".The const keyword makes a variable itself immutable, not its assigned content. When the content is an object, this means the object itself can still be altered.Therefore, it's possible to change the content of the object that is declared with const variable, but you cannot assign a new object to a const variable.
+
+// q9 - output
+const obj = { a: 1, b: 2 }
+const obj2 = { a: 3, b: 4 }
+obj = obj2
+// output - TypeError: Assignment to constant variable.
+// reason -constants are used to make "variables which cannot be re-assigned new content".The const keyword makes a variable itself immutable, not its assigned content. When the content is an object, this means the object itself can still be altered.Therefore, it's possible to change the content of the object that is declared with const variable, but you cannot assign a new object to a const variable.
+
+// q10 - output
+const array = [1, 2, 3, 4]
+array.push(55)
+// output - 55
+// reason - It does NOT define a constant array. It defines a constant reference to an array.Because of this, we can still change the elements of a constant array.
+
+// q11 - output
+
+
+// ES5 function
+function getNum() {
+  return 2
+}
+
+// with no parameter ES6 function
+const getNum = () => 2
+
+// with no parameter
+const isOne = (num) => num == 1
+// Calling the function
+console.log(isOne(12))
+// output - false
