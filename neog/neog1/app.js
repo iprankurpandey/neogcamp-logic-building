@@ -102,3 +102,13 @@ const isOne = (num) => num == 1
 // Calling the function
 console.log(isOne(12))
 // output - false
+// Vinay
+
+function isOne(num) {
+    return num === 1 ? true : false
+  }
+  
+  // Hiren
+  function isOne(num) {
+    console.log(num)
+  }
